@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Brony Town - A community for pony enthusiasts">
+    <title>Brony.Town - Community Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>🦄 Brony.Town</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Brony Town</h2>
+                <p>A welcoming community for pony fans from around the world</p>
+                <button class="cta-button" onclick="scrollTo('features')">Explore More</button>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Brony Town</h2>
+                <p>Brony Town is a vibrant online community dedicated to bringing together fans of all things pony-related. Whether you're interested in My Little Pony, creating fan art, sharing stories, or simply making friends with like-minded individuals, you've found the right place.</p>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>🎨 Creative</h3>
+                        <p>Share your art, music, and creative works with a supportive community</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>👥 Social</h3>
+                        <p>Connect with thousands of bronies worldwide and build lasting friendships</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>🛡️ Safe</h3>
+                        <p>A moderated, welcoming space where everyone is respected and valued</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>Forums & Chat</h3>
+                        <p>Discuss your favorite shows, episodes, and characters in real-time</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Games & Events</h3>
+                        <p>Participate in gaming events and community challenges</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Resources</h3>
+                        <p>Access guides, tutorials, and a wealth of community knowledge</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎬</div>
+                        <h3>Media Hub</h3>
+                        <p>Browse and share fan art, music, and videos from the community</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Global Community</h3>
+                        <p>Connect with bronies from every corner of the world</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎉</div>
+                        <h3>Conventions & Meetups</h3>
+                        <p>Find and organize brony conventions and local meetups</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="community">
+            <div class="container">
+                <h2>Join Our Community</h2>
+                <div class="community-content">
+                    <div class="community-stats">
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Active Members</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100K+</h3>
+                            <p>Posts Daily</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Moderation</p>
+                        </div>
+                    </div>
+                    <div class="community-cta">
+                        <h3>Ready to join?</h3>
+                        <p>Create an account and become part of the Brony Town family today!</p>
+                        <button class="primary-button">Sign Up Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="primary-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Brony Town. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Discord">Discord</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
