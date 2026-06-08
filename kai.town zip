@@ -1,0 +1,13 @@
+KAI.TOWN-Extension/
+├── manifest.json          ✓ Configuration file (Manifest V3)
+├── content.js             ✓ Main overlay & effects script
+├── content.css            ✓ Content styles
+├── background.js          ✓ Service worker
+├── popup.html             ✓ Control panel UI
+├── popup.js               ✓ Control panel logic
+├── popup.css              ✓ Control panel styling
+├── images/
+│   ├── icon16.png         (Placeholder - add your icon)
+│   ├── icon48.png         (Placeholder - add your icon)
+│   └── icon128.png        (Placeholder - add your icon)
+└── README.md              ✓ Installation instructions
