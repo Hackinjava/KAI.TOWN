@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAI.TOWN Control Panel</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <div class="header">
+            <h1>KAI.TOWN</h1>
+            <p>Brony Community Hub</p>
+        </div>
+
+        <!-- Day/Night Toggle -->
+        <section class="control-section">
+            <h2>Theme Settings</h2>
+            <div class="control-group">
+                <label for="dayNightToggle">Day/Night Mode</label>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="dayNightToggle" class="toggle-checkbox">
+                    <label for="dayNightToggle" class="toggle-label">
+                        <span class="toggle-inner">
+                            <span class="toggle-switch-icon day-icon">☀️</span>
+                            <span class="toggle-switch-icon night-icon">🌙</span>
+                        </span>
+                    </label>
+                </div>
+                <span id="themeStatus" class="status">Day Mode</span>
+            </div>
+        </section>
+
+        <!-- Rainbow Hue Slider -->
+        <section class="control-section">
+            <h2>Color Settings</h2>
+            <div class="control-group">
+                <label for="rainbowHue">Rainbow Hue</label>
+                <input type="range" id="rainbowHue" class="hue-slider" min="0" max="360" value="0">
+                <div id="huePreview" class="hue-preview"></div>
+                <span id="hueValue" class="status">0° - Red</span>
+            </div>
+        </section>
+
+        <!-- Video Background -->
+        <section class="control-section">
+            <h2>Background Video</h2>
+            <div class="control-group">
+                <label for="videoUrl">YouTube Video URL</label>
+                <input type="text" id="videoUrl" class="input-field" placeholder="https://www.youtube.com/watch?v=...">
+                <button id="setVideoBtn" class="btn btn-primary">Set Background Video</button>
+                <span id="videoStatus" class="status">No video set</span>
+            </div>
+        </section>
+
+        <!-- Reset Button -->
+        <section class="control-section">
+            <button id="resetBtn" class="btn btn-secondary">Reset All Settings</button>
+        </section>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
